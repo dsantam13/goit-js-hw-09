@@ -11,7 +11,11 @@ bodyElement.append(divButtons);
 divButtons.append(btnStart, btnStop);
 divButtons.style.display = "flex";
 divButtons.style.justifyContent = "center";
+btnStart.style.marginRight = "10px";
 
+document.querySelectorAll("button").forEach((btn) => {
+  btn.style.padding = "10px 20px";
+});
 
 let timerId = null;
 btnStop.disabled = true;
