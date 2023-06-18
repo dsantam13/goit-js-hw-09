@@ -5,6 +5,14 @@ function getRandomHexColor() {
 const btnStart = document.querySelector('[data-start]');
 const btnStop = document.querySelector('[data-stop]');
 const bodyElement = document.querySelector("body");
+
+const divButtons = document.createElement("div");
+bodyElement.append(divButtons);
+divButtons.append(btnStart, btnStop);
+divButtons.style.display = "flex";
+divButtons.style.justifyContent = "center";
+
+
 let timerId = null;
 btnStop.disabled = true;
 
