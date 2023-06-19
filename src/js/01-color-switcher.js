@@ -11,6 +11,7 @@ bodyElement.append(divButtons);
 divButtons.append(btnStart, btnStop);
 divButtons.style.display = "flex";
 divButtons.style.justifyContent = "center";
+divButtons.style.alignItems = "center";
 btnStart.style.marginRight = "10px";
 
 document.querySelectorAll("button").forEach((btn) => {
